@@ -12,5 +12,5 @@ jobs:
        id: mqm
        continue-on-error: true
        run: |
-           sh qmgrconnect.sh
+           sh createqlocal.sh
            pwd
