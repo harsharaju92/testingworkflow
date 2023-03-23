@@ -25,5 +25,4 @@ jobs:
      - name : run the script
        id: mqm
        shell: bash
-       run : sh /tmp/createqlocal.sh
-             -- QM2
+       run : sh /tmp/createqlocal.sh QM2
