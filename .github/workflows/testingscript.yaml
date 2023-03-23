@@ -22,6 +22,6 @@ jobs:
      - name: change the permissions  
        shell: bash
        run: chmod 764  createqlocal.sh
-     - name :run the script
-       shell:bash
-       run : ./createqlocal.sh
+     - name : run the script
+       shell: bash
+       run : createqlocal.sh
