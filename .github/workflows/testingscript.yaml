@@ -11,7 +11,10 @@ jobs:
        shell: bash
        id: mqm
        #continue-on-error: true
-       run: |
-           ls
-           sh createqlocal.sh
-           pwd
+       run: ls
+     - name: change the permissions  
+       shell: bash
+       run: chmod 764  createqlocal.sh
+     - name : check the present working directory
+       shell: bash
+       run : pwd
