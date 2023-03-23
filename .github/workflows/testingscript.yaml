@@ -1,0 +1,16 @@
+name: Execute Script
+on:
+  push:
+    branches:
+      - main
+jobs:
+  example-job:
+   runs-on: self-hosted
+   steps:
+     - name: Run build script
+       shell: bash
+       id: mqm
+       continue-on-error: true
+       run: |
+           sh qmgrconnect.sh
+           pwd
