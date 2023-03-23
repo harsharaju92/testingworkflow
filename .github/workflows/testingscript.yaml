@@ -23,5 +23,6 @@ jobs:
        shell: bash
        run: chmod 764  createqlocal.sh
      - name : run the script
+       id: mqm
        shell: bash
-       run : createqlocal.sh
+       run : sh /tmp/createqlocal.sh
