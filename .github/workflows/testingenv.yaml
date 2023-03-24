@@ -7,7 +7,7 @@ on:
   pull_request:
     branches: [ "main" ]
 env:
-  Day-oftheweek: Sunday
+  DAY_OF_WEEK: Monday
   
       
       
@@ -19,7 +19,7 @@ jobs:
    steps:
      - uses: actions/checkout@v3
      - name: verify env variable
-       run: echo "$Greeting $name .Today is $Day-oftheweek"
+       run: echo "$Greeting $name .Today is $DAY_OF_WEEK"
        env:
          name: Madhuri
         
