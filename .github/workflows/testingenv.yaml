@@ -1,0 +1,25 @@
+name: Testing env variables
+on:
+  push:
+    branches:
+      - main
+      
+  pull_request:
+    branches: [ "main" ]
+ env:
+  Day-oftheweek: Sunday
+  
+      
+      
+jobs:
+  env-job:
+   runs-on: self-hosted
+   env:
+     Greeting: Hello
+   steps:
+     - uses: actions/checkout@v3
+     - name: verify env variable
+       run: echo "$Greeting $name .Today is $Day-oftheweek"
+       env:
+         name: Madhuri
+        
