@@ -22,4 +22,6 @@ jobs:
        run: echo "$Greeting $name .Today is $DAY_OF_WEEK"
        env:
          name: Madhuri
+     - name: verify github environments
+       run: echo $github.actor_id
         
