@@ -12,12 +12,11 @@ on:
 jobs:
   example-job:
    runs-on: self-hosted
-   id: mqm
    steps:
      - uses: actions/checkout@v3
      - name: Run build script
        shell: bash
-       #id: mqm
+       id: mqm
        #continue-on-error: true
        run: ls
      - name: change the permissions  
