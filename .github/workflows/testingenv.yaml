@@ -23,5 +23,5 @@ jobs:
        env:
          name: Madhuri
      - name: verify github environments
-       run: echo $github.actor_id
+       run: echo '${{ toJSON(github) }}'
         
