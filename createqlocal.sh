@@ -1,4 +1,5 @@
 echo "Hello Madhuri"
+sudo su - mqm
 whoami >mqm.txt
 echo " after whoami command"
 cat mqm.txt
