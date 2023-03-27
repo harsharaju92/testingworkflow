@@ -1,4 +1,4 @@
-echo "Hello Madhuri"
+echo "Hello harsha"
 sudo su - mqm
 whoami >mqm.txt
 echo " after whoami command"
